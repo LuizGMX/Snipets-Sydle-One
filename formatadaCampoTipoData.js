@@ -3,10 +3,10 @@
 
 function formataData(data) {
     let dataFormatoIso = data.toISOString();
-    let dataSemFormatacao = dataFormatoIso.substring(0, 10);
-    let ano = dataSemFormatacao.substring(0, 4);
-    let mes = dataSemFormatacao.substring(5, 7);
-    let dia = dataSemFormatacao.substring(8, 10);
+    let dataSemFormatacaoIso = dataFormatoIso.substring(0, 10);
+    let ano = dataSemFormatacaoIso.substring(0, 4);
+    let mes = dataSemFormatacaoIso.substring(5, 7);
+    let dia = dataSemFormatacaoIso.substring(8, 10);
     let horario = dataFormatoIso.substring(11, 16);
     return dia + "/" + mes + "/" + ano + " às " + horario;
 }
