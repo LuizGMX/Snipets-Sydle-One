@@ -1,0 +1,22 @@
+//elastic search dentro do postman
+{
+    "from":0,
+    "size":10,
+    "query": {
+        "bool":{
+            "must":[
+                {
+                    "term":{
+                        "nome.keyword":"BANCO SANTANDER S.A"
+                    }
+                },
+                {
+                    "match":{
+                        "ativo":true
+                    }
+                }
+            ]
+        }
+        
+    }
+}
